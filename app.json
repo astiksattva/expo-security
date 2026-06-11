@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Expo Security Lab",
+    "slug": "expo-security-lab",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "expo-security-lab",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Use Face ID / Touch ID to authenticate",
+        "NSCameraUsageDescription": "Camera used for QR scanning",
+        "NSLocationWhenInUseUsageDescription": "Location used for device monitoring",
+        "NSPhotoLibraryUsageDescription": "Photo library access for screenshots"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "USE_FINGERPRINT",
+        "USE_BIOMETRIC",
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "NFC"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-local-authentication",
+      "expo-secure-store",
+      "expo-screen-capture",
+      "expo-notifications",
+      "expo-camera",
+      "expo-nfc",
+      "expo-location",
+      "expo-sensors",
+      "expo-updates"
+    ]
+  }
+}
